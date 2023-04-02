@@ -33,16 +33,28 @@ public class Start {
                 }
                 System.out.println(st);
             }else if(c==2){
+                System.out.println("Enter student id to delete student: ");
+                int userId = Integer.parseInt((br.readLine()));
+                boolean f= StudentDao.deleteStudent(userId);
+                if(f){
+                    System.out.println("Deleted");
+                }else{
+                    System.out.println("Something went wrong");
+                }
                 //delete student
             } else if (c == 3) {
+                StudentDao.showAllStudent();
+
 
                 //display student
             }else if(c==4){
                 //exit app
+              break;
             }else{
 
-            }
 
+            }
+            System.out.println("Thanks for using the app");
         }
 
     }
