@@ -29,7 +29,7 @@ public class Start {
                 if(answer){
                     System.out.println("Student added successfully");
                 }else{
-                    System.out.println("Something went wrong!!! Try again...");
+                    System.out.println("Something went wrong!!! Try again");
                 }
                 System.out.println(st);
             }else if(c==2){
